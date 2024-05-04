@@ -1,5 +1,9 @@
 {
   "compilerOptions": {
+    "baseUrl": "./",
+
+    "types": ["node"],
+
     "target": "ES2020",
     "useDefineForClassFields": true,
     "lib": ["ES2020", "DOM", "DOM.Iterable"],
@@ -19,8 +23,25 @@
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
-    "allowSyntheticDefaultImports": true
+    "allowSyntheticDefaultImports": true,
+
+    "paths": {
+      "@src": ["./src"],
+      "@src/*": ["./src/*"],
+      "@types": ["./src/types"],
+      "@types/*": ["./src/types/*"],
+      "@app": ["./src/app"],
+      "@app/*": ["./src/app/*"],
+      "@assets": ["./src/assets"],
+      "@assets/*": ["./src/assets/*"],
+      "@modules": ["./src/modules"],
+      "@modules/*": ["./src/modules/*"],
+      "@projects": ["./src/projects"],
+      "@projects/*": ["./src/projects/*"],
+      "@styles": ["./src/styles"],
+      "@styles/*": ["./src/styles/*"]
+    }
   },
-  "include": ["src"],
+  "include": ["./**/*"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
