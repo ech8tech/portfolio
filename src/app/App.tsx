@@ -1,7 +1,7 @@
 import styles from './App.module.scss';
 import { Route, Routes } from 'react-router';
 import { BrowserRouter } from 'react-router-dom';
-import { Main } from '../modules';
+import { Canvas, Main } from '../modules';
 
 function App() {
   return (
@@ -9,6 +9,9 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Main />} />
+        </Routes>
+        <Routes>
+          <Route path="/canvas" element={<Canvas />} />
         </Routes>
       </BrowserRouter>
     </div>
