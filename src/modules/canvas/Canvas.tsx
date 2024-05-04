@@ -1,16 +1,18 @@
-import styles from './Canvas.module.scss';
 import { Link } from 'react-router-dom';
+import { Block } from '@src/components';
 
 export default function Canvas() {
   return (
     <div>
-      <h1 className={styles.title_main}>Canvas</h1>
+      <Block spacing={40}>
+        <h1>Canvas</h1>
+      </Block>
 
-      <div className={styles.section}>
-        <Link to="/pixel_pioneer">
+      <Block spacing={16} isInline>
+        <Link to="pixel-pioneer">
           <h2>Pixel Pioneer</h2>
         </Link>
-      </div>
+      </Block>
     </div>
   );
 }
