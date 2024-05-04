@@ -1,0 +1,13 @@
+@import 'src/styles/variables';
+
+.title_main {
+  margin-bottom: $space_40;
+}
+
+.section {
+  margin-bottom: $space_36;
+
+  &_title {
+    margin-bottom: $space_24;
+  }
+}
