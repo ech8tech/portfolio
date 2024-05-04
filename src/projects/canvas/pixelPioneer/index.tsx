@@ -1,8 +1,8 @@
 import React, { Suspense } from 'react';
 
-export function PixelPioneer() {
-  const PixelPioneerComponent = React.lazy(() => import('./PixelPioneer'));
+const PixelPioneerComponent = React.lazy(() => import('./PixelPioneer'));
 
+export function PixelPioneer() {
   return (
     <Suspense>
       <PixelPioneerComponent />
